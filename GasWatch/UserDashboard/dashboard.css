@@ -300,11 +300,87 @@ body {
 #content nav #switch-mode:checked + .switch-mode::before {
 	left: calc(100% - (25px - 4px) - 2px);
 }
+.search {
+    display: none;
+}
+.right-side{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: end;
+}
 /* NAVBAR */
+/* MODAL */
+#add .w3-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#add .w3-modal-content{
+	width: 30%;
+	border-radius: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+/* content */
 
+  .form-container{
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	justify-content:center ;
+  }
+  /* form*/
+  form select{
+	padding: 15px;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+  .submit{
+	color: white;
+	border: none;
+	margin-top: 10px;
+	border-radius: 10px;
+	height: 50px;
+	width: 150px;
+	background-color: rgb(52,77,210);
+  }
+  /* button back  and skip */
+  .button-container{
+	display: flex;
+	justify-content: space-between;
+  }
+  .back, .skip{
+	
+	padding: 20px;
+	color: black;
+	border-color: rgb(52,77,210);
+	margin-top: 20px;
+	border-radius: 10px;
+	height: 50px;
+	width: 150px;
+	background-color: white;
+  
+  } 
 
-
-
+@media screen and (max-width: 768px) {
+	#add .w3-modal-content{
+		width: 20%;
+	}
+	form select{
+		width: 100%;
+	}
+	.submit{
+		width: 100%;
+	}
+	.back, .skip{
+		width: 100%;
+	}
+	
+}
 
 /* MAIN */
 .grid-child{

@@ -8,13 +8,53 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="dashboard.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<title>GasWatch</title>
 	<link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
 </head>
 <body>
+<!-- MODAL ADD A TANK -->
+	<div id="add" class="w3-modal" style="display: none;">
+		<div class="w3-modal-content">
+		  <div class="w3-container">
+			<span onclick="document.getElementById('add').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+			<!-- content-->
+			  <div class="form-container">
+				
+				<form action="">
+				<h3 style="text-align: center;">ADD A TANK</h3>
 
-
+				  <select id="brand" name="brand">
+					<option value="" disabled selected>Select Brand</option>
+					<option value="lpg">LPG</option>
+					<option value="solane">Solane</option>
+					<option value="superkalan">Super Kalan</option>
+					<option value="brent">Brent</option>
+				  </select><br>
+				  <select id="weight" name="weight">
+					<option value="" disabled selected>Select Weight</option>
+					<option value="50kg">50kg</option>
+					<option value="22kg">22kg</option>
+					<option value="11kg">11kg</option>
+					<option value="7kg">7kg</option>
+					<option value="2.7kg">2.7kg</option>
+				  </select><br>
+				  <button type="submit" class="submit">Submit</button>
+				  <div class="button-container">
+					<div class="container-back">
+					  <button class="back">Back</button>
+		  
+					</div>
+					<div class="container-next">
+					  <button class="skip">Skip</button>
+					</div>
+				  </div>
+				</form>
+			  </div>
+		  </div>
+		</div>
+	  </div>	
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
@@ -55,8 +95,7 @@
 		<!-- NAVBAR -->
 		<nav>
 			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">Categories</a>
-			<form action="#">
+			<form action="#" class="search">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
@@ -64,13 +103,17 @@
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
+			<div class="right-side">
+				<h4>Hello, Gleibeile!</h4>
+				<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
 				<span class="num">1</span>
 			</a>
 			<a href="#" class="profile">
 				<img src="image/user.png">
 			</a>
+			</div>
+			
 		</nav>
 		<!-- NAVBAR -->
 
@@ -89,7 +132,7 @@
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="btn-download">
+				<a href="#" class="btn-download" onclick="document.getElementById('add').style.display='block'">
 					<i class='bx bxs-cloud-download' ></i>
 					<span class="text">ADD TANK</span>
 				</a>
