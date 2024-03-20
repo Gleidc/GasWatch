@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -23,7 +25,42 @@
   -->
 <!-- what -->
   <header class="header" data-header>
+<!--  Login Modal -->
+<div id="id01" class="w3-modal " style="display: none;">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <h3 style="text-align: center;">Login</h3>
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <input type="text" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <span onclick="togglePasswordVisibility();" class="password-toggle-btn">
+        <i id="togglePasswordVisibilityIcon" class="far fa-eye"></i>
+      </span>
+      <input type="submit" value="submit">
+      <a href="">Forgot Password?</a>
+      <a href="#" onclick="openSignupModal()"> Dont have an account? Signup</a>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Signup -->
 
+<div id="id02" class="w3-modal" style="display: none;">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <h3 style="text-align: center;">Signup</h3>
+      <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <!-- Add Signup Form Fields here -->
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="password" id ="password_signup" placeholder="Password">
+      <span onclick="togglePasswordVisibility_2();" class="password-toggle-btn">
+        <i id="togglePasswordVisibilityIcon_2" class="far fa-eye"></i>
+      </span>
+      <input type="submit" value="submit">
+    </div>
+  </div>
+</div>
     <div class="overlay" data-overlay></div>
 
     <div class="header-top">
@@ -95,8 +132,9 @@
 
         </nav>
         <div class="btn-group">
-          <button class="btn btn-primary">Login</button>
-          <button class="btn btn-secondary">ADD TANK</button>
+          <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Login</button>
+          
+          <button class="btn btn-secondary"  onclick="document.getElementById('id01').style.display='block'">ADD TANK</button>
         </div>
       </div>
     </div>
@@ -104,6 +142,7 @@
   </header>
 
   <main>
+    
     <article>
 
       <!-- 
@@ -511,8 +550,10 @@
   <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

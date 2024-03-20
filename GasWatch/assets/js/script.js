@@ -44,3 +44,38 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+// modal
+function openSignupModal() {
+  document.getElementById('id01').style.display = 'none';
+  document.getElementById('id02').style.display = 'block';
+}
+// password
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById("password");
+  var toggleIcon = document.getElementById("togglePasswordVisibilityIcon");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleIcon.classList.remove("far", "fa-eye");
+    toggleIcon.classList.add("far", "fa-eye-slash");
+  } else {
+    passwordInput.type = "password";
+    toggleIcon.classList.remove("far", "fa-eye-slash");
+    toggleIcon.classList.add("far", "fa-eye");
+  }
+}
+function togglePasswordVisibility_2() {
+  var passwordInput = document.getElementById("password_signup");
+  var toggleIcon = document.getElementById("togglePasswordVisibilityIcon");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleIcon.classList.remove("far", "fa-eye");
+    toggleIcon.classList.add("far", "fa-eye-slash");
+  } else {
+    passwordInput.type = "password";
+    toggleIcon.classList.remove("far", "fa-eye-slash");
+    toggleIcon.classList.add("far", "fa-eye");
+  }
+}

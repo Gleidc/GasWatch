@@ -848,6 +848,68 @@ address {
 
 
 
+/* LOGIN MODAL */
+#id01 .w3-modal-content{
+  padding: 20px; 
+  width: 30%;
+  border-radius: 10px;
+}
+#id01 input[type=text], input[type=password] {
+  padding: 12px;
+}
+#id01 input[type=submit]{
+  background-color: #184C91;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  font: arial;
+  text-transform: capitalize;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+}
+#id01 a{
+  color: #184C91;
+  text-align: center;
+  font-size: 12px;
+}
+#id01 .password-toggle-btn {
+  position: absolute; /* Position absolutely inside the input field */
+  right: 50px; /* Adjust the distance from the right */
+  top: 50%; /* Align vertically to the middle */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+/* SIGNUP MODAL */
+
+
+#id02 .w3-modal-content{
+  padding: 20px; 
+  width: 30%;
+  border-radius: 10px;
+}
+#id02 input[type=text], input[type=email] ,input[type=password] {
+  padding: 12px;
+}
+#id02 input[type=submit]{
+  background-color: #184C91;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  font: arial;
+  text-transform: capitalize;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+}
+#id02 .password-toggle-btn {
+  position: absolute; /* Position absolutely inside the input field */
+  right: 50px; /* Adjust the distance from the right */
+  top: 64%; /* Align vertically to the middle */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 
 
 /*-----------------------------------*\
