@@ -696,7 +696,7 @@ body { background: var(--white); }
 
 .footer-brand { margin-bottom: 30px; }
 
-.footer-brand img { width: 180px; }
+.footer-brand img { width: 100px; }
 
 .footer-brand .logo { margin-bottom: 20px; }
 
